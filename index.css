@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #708090;
+    font-family: Tahoma;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: orange;
+    padding: 10px;
+    height: 50px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    margin: 50px 50px;
+    width: 300px;
+    height: 470px;
+    border-radius: 30px;
+    background: white;
+    padding: 20px;
+    box-shadow: 4px 4px 4px #4f4f4f;
+}
+
+.calculator_one {
+    margin: 50px 50px;
+    width: 300px;
+    height: 470px;
+    border-radius: 30px;
+    background: #091235;
+    color: white;
+    padding: 20px;
+    box-shadow: 4px 4px 4px #4f4f4f;
+}
+
+.calculator__screen {
+    height: 70px;
+    padding: 8px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 10px;
+}
+
+.calculator__screen p {
+    text-align:  right;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas:
+    "ac plus_minus percent division"
+    "seven eigth nine multi"
+    "four five three plus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+    align-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: whitesmoke;
+    border-radius: 30%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn_one {
+    width: 60px;
+    height: 60px;
+    background: #2b4257;
+    border-radius: 30%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
+.btn.color_grey {
+    color: #a6a6a6;
+}
+
+.btn.color_orange {
+    color: orange;
+}
+
+.farmgame__btn {
+    padding: 7px;
+    border-radius: 11px;
+    border: none;
+    background: whitesmoke;
+    cursor: pointer;
+    margin-right: 50px;
+    transition: 500ms ease;
+}
+
+.farmgame__btn_one {
+    padding: 7px;
+    border-radius: 11px;
+    border: none;
+    background: #2b4257;
+    color: white;
+    cursor: pointer;
+    margin-right: 50px;
+    transition: 500ms ease;
+}
